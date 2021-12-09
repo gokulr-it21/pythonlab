@@ -1,0 +1,48 @@
+<html>
+<title>
+My javascript
+</title>
+<body style="background-color:darkgrey">
+<h1 style="text-align:center">Calculator<h1>
+<h1 id="head1"> </h1>
+<p id="p1"> </p>
+<p id="p2"> </p>
+<p id="p3"> </p>
+<p id="p4"> </p>
+ <style>
+ p {font-size:200%}
+ </style>
+<script >
+var num1=parseInt(prompt("Enter Number1"));
+var num2=parseInt(prompt("Enter Number2"));
+var c=prompt("Enter the choice");
+if (c=="*")
+{
+m=num1*num2
+ document.getElementById("p1").innerHTML=m;
+}
+else if (c=="+")
+{
+n=num1+num2
+ document.getElementById("p2").innerHTML=n;
+}
+else if (c=="-")
+{
+o=num1-num2
+ document.getElementById("p3").innerHTML=o;
+}
+
+else if (c=="/")
+{
+p=num1/num2
+ document.getElementById("p4").innerHTML=p;
+}
+</script>
+  
+  
+
+
+
+
+</body>
+</html>
