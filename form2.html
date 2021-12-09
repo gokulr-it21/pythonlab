@@ -1,0 +1,27 @@
+<html>
+<head>
+ <title>
+   Function demo
+ </title>
+</head>
+<body>
+<h1>Login Page</h1>
+<form>
+ Enter String1 : <input type="text" id ="s1" name="s1"/><br>
+ Enter String2 : <input type="text" id="s2" name="s2"/><br>
+ <input type="button" id="concat" onclick="concatenate(form)" value="concat"/><br>
+</form> 
+   <h3 id="result" > </h3>
+<script>    
+  function concatenate(form)
+ {
+  var string1 = form.s1.value;
+  var string2 = form.s2.value;
+  b=string1.concat(string2); 
+  document.getElementById("result").innerHTML=b;
+   }	
+   
+ 
+</script>
+</body>
+</html>
